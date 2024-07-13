@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:learn_flutter_animated_widget/app/modules/home/views/box_widget.dart';
+import '/app/routes/app_pages.dart';
 
 import '../controllers/home_controller.dart';
 
@@ -19,17 +19,17 @@ class HomeView extends GetView<HomeController> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            BoxWidget(controller.animationC),
-            const SizedBox(
-              height: 50
+            ElevatedButton(
+              onPressed: () => Get.toNamed(Routes.ANIMATED_WIDGET),
+              child: const Text('Animated Widget'),
             ),
-            BoxWidget(controller.animationC),
             const SizedBox(
-              height: 50
+              height: 10,
             ),
-            BoxWidget(controller.animationC),
-            const SizedBox(
-              height: 50
+            ElevatedButton(
+              onPressed: () =>
+                  Get.toNamed(Routes.ANIMATED_DECORATED_BOX_TRANSITION),
+              child: const Text('Animated Decoration Box Transition'),
             ),
           ],
         ),
