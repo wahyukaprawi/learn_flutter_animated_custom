@@ -9,6 +9,7 @@ abstract class Routes {
   static const ANIMATED_WIDGET = _Paths.ANIMATED_WIDGET;
   static const ANIMATED_DECORATED_BOX_TRANSITION =
       _Paths.ANIMATED_DECORATED_BOX_TRANSITION;
+  static const ANIMATED_FADE_TRANSITION = _Paths.ANIMATED_FADE_TRANSITION;
 }
 
 abstract class _Paths {
@@ -17,4 +18,5 @@ abstract class _Paths {
   static const ANIMATED_WIDGET = '/animated-widget';
   static const ANIMATED_DECORATED_BOX_TRANSITION =
       '/animated-decorated-box-transition';
+  static const ANIMATED_FADE_TRANSITION = '/animated-fade-transition';
 }

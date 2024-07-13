@@ -11,7 +11,7 @@ class AnimatedWidgetView extends GetView<AnimatedWidgetController> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('AnimatedWidgetView'),
+        title: const Text('Animated Widget View'),
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         centerTitle: true,
       ),
