@@ -38,6 +38,13 @@ class HomeView extends GetView<HomeController> {
               onPressed: () => Get.toNamed(Routes.ANIMATED_FADE_TRANSITION),
               child: const Text('Animated Fade Transition'),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            ElevatedButton(
+              onPressed: () => Get.toNamed(Routes.ANIMATED_AVATAR_GLOW),
+              child: const Text('Animated Avatar Glow'),
+            ),
           ],
         ),
       ),
